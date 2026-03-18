@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "recommended": [
+    {
+      "id": "everything-claude-code",
+      "name": "Everything Claude Code",
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "source_dir": "skills",
+      "overlay_dir": ".agents/skills",
+      "notes": "Large, engineering-heavy skill catalog with Codex overlay support."
+    },
+    {
+      "id": "awesome-claude-skills",
+      "name": "VoltAgent Awesome Claude Skills",
+      "repo": "https://github.com/VoltAgent/awesome-claude-skills.git",
+      "source_dir": "skills",
+      "notes": "Curated discovery repo for Claude-oriented skills and resources."
+    },
+    {
+      "id": "awesome-claude-code",
+      "name": "Awesome Claude Code",
+      "repo": "https://github.com/hesreallyhim/awesome-claude-code.git",
+      "source_dir": "skills",
+      "notes": "Large community repo focused on Claude Code workflows, commands, and skill patterns."
+    }
+  ]
+}

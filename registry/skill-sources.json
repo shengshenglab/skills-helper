@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "starter-local",
+      "type": "local",
+      "path": ".",
+      "source_dir": "skills",
+      "include": [
+        "project-skill-router"
+      ]
+    },
+    {
+      "id": "everything-claude-code",
+      "type": "git",
+      "repo": "https://github.com/affaan-m/everything-claude-code.git",
+      "ref": "main",
+      "source_dir": "skills",
+      "overlay_dir": ".agents/skills"
+    },
+    {
+      "id": "awesome-claude-skills",
+      "type": "git",
+      "repo": "https://github.com/VoltAgent/awesome-claude-skills.git",
+      "ref": "main",
+      "source_dir": "skills"
+    },
+    {
+      "id": "awesome-claude-code",
+      "type": "git",
+      "repo": "https://github.com/hesreallyhim/awesome-claude-code.git",
+      "ref": "main",
+      "source_dir": "skills"
+    }
+  ]
+}

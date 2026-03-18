@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "strategy": "skip-lower-priority",
+  "notes": [
+    "Sources earlier in registry/skill-sources.json have higher priority.",
+    "The main repo should appear first among external sources.",
+    "Lower-priority sources with the same skill name or matching duplicate-function groups are skipped."
+  ],
+  "groups": [
+    {
+      "id": "coding-standards",
+      "aliases": [
+        "coding-standards",
+        "code-standards",
+        "coding-standard",
+        "code-style-guide"
+      ]
+    },
+    {
+      "id": "tdd-workflow",
+      "aliases": [
+        "tdd-workflow",
+        "tdd",
+        "test-driven-development"
+      ]
+    },
+    {
+      "id": "verification-loop",
+      "aliases": [
+        "verification-loop",
+        "verify",
+        "verification",
+        "quality-gate"
+      ]
+    },
+    {
+      "id": "security-review",
+      "aliases": [
+        "security-review",
+        "security-checklist",
+        "secure-review",
+        "security-audit"
+      ]
+    },
+    {
+      "id": "documentation-lookup",
+      "aliases": [
+        "documentation-lookup",
+        "docs-lookup",
+        "context7-docs",
+        "library-docs"
+      ]
+    },
+    {
+      "id": "api-design",
+      "aliases": [
+        "api-design",
+        "rest-api-design",
+        "api-patterns"
+      ]
+    },
+    {
+      "id": "backend-patterns",
+      "aliases": [
+        "backend-patterns",
+        "server-patterns",
+        "backend-architecture"
+      ]
+    },
+    {
+      "id": "frontend-patterns",
+      "aliases": [
+        "frontend-patterns",
+        "frontend-architecture",
+        "ui-patterns"
+      ]
+    },
+    {
+      "id": "e2e-testing",
+      "aliases": [
+        "e2e-testing",
+        "playwright-e2e",
+        "browser-testing"
+      ]
+    },
+    {
+      "id": "market-research",
+      "aliases": [
+        "market-research",
+        "competitive-research",
+        "competitor-research"
+      ]
+    }
+  ]
+}

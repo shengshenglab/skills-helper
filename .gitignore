@@ -1,0 +1,11 @@
+node_modules/
+
+# local cloned skill repos
+subrepos/*
+!subrepos/.gitkeep
+
+# local cache used by remote-source installs
+.codex-skill-installer/
+
+# misc
+.DS_Store

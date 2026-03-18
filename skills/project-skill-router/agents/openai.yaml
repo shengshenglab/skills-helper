@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Skill Router"
+  short_description: "Pick the right Codex skills for a repository at startup"
+  brand_color: "#2563EB"
+  default_prompt: "Analyze this repository and choose the best skills to keep active"
+policy:
+  allow_implicit_invocation: true

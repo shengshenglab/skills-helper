@@ -1,0 +1,22 @@
+{
+  "name": "skills-helper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Registry-driven Codex skill installer with project-start skill recommendations",
+  "scripts": {
+    "download:recommended": "node scripts/download-recommended.js",
+    "install:skills": "node scripts/install-skills.js",
+    "install:all": "node scripts/install-all.js",
+    "update:skills": "node scripts/update-skills.js",
+    "uninstall": "node scripts/uninstall.js",
+    "quick-install": "node scripts/quick-install.js",
+    "recommend": "node scripts/recommend-skills.js",
+    "install:startup": "node scripts/install-startup-snippet.js",
+    "list:recommended": "node scripts/list-recommended-repos.js",
+    "add:local-source": "node scripts/add-local-source.js",
+    "test": "node tests/recommend-skills.test.js && node tests/install-startup-snippet.test.js && node tests/dedupe-rules.test.js && node tests/install-manifest.test.js && node tests/install-report.test.js && node tests/uninstall.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
