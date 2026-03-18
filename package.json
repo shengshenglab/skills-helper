@@ -2,7 +2,7 @@
   "name": "skills-helper",
   "version": "0.1.0",
   "private": true,
-  "description": "Registry-driven Codex skill installer with project-start skill recommendations",
+  "description": "Install, dedupe, recommend, and update Codex skills from multiple repos",
   "scripts": {
     "download:recommended": "node scripts/download-recommended.js",
     "install:skills": "node scripts/install-skills.js",

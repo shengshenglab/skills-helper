@@ -2,13 +2,20 @@
 
 [中文首页](./README.md)
 
-Install multiple Codex skill repos, dedupe overlapping skills, and make `project-skill-router` available at the start of work in a new repository.
-This repo is useful when you want Codex to:
+A skill installer and recommender for Codex.
 
-- install a shared skill catalog into `~/.codex/skills`
-- recommend a smaller set of skills to prioritize for each repository
-- keep niche or high-cost skills opt-in by default
-- refresh that recommendation when the task or repo structure changes
+It does three jobs:
+
+- installs multiple skill repos into `~/.codex/skills`
+- dedupes overlapping or duplicate skills
+- uses `project-skill-router` to recommend a more focused skill set for each repository
+
+## Core Capabilities
+
+- One-step install: set up the default recommended skill repos in your local Codex environment
+- Skill recommendation: run a visible routing pass when entering a new repository
+- Skill updates: refresh upstream skills with one prompt or one command
+- GitHub-friendly defaults: shareable config that works from a fresh clone
 
 The default recommended skill repos bundled by this helper are:
 

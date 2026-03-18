@@ -2,14 +2,20 @@
 
 [English README](./README.en.md)
 
-把多个 Codex skill repo 安装到本地、对重复技能做去重，并让 `project-skill-router` 能在进入新仓库时先给出一组更聚焦的 skill 推荐。
+一个面向 Codex 的 skill 安装器和推荐器。
 
-这个仓库适合你在这些场景里使用：
+它解决三件事：
 
-- 把一整套共享 skill 安装到 `~/.codex/skills`
-- 针对不同仓库优先使用一小组更合适的 skills
-- 默认把高成本、偏垂直的 skills 保持为按需启用
-- 在任务变化或仓库结构变化时重新刷新推荐
+- 把多个 skill repo 安装到 `~/.codex/skills`
+- 对重复或功能重叠的 skills 做去重
+- 在进入新仓库时，用 `project-skill-router` 推荐一组更聚焦的 skills
+
+## 核心能力
+
+- 一键安装：把默认推荐 skill repo 安装到本地 Codex 环境
+- 技能推荐：进入新仓库时，先做一轮 skill routing
+- 技能更新：上游 repo 更新后，可一句话或一条命令完成刷新
+- GitHub 友好：默认配置适合直接公开分享，fresh clone 就能用
 
 这个 helper 默认带的推荐 skill repo 是：
 
