@@ -8,12 +8,12 @@ It does three jobs:
 
 - installs multiple skill repos into `~/.codex/skills`
 - dedupes overlapping or duplicate skills
-- uses `project-skill-router` to recommend a more focused skill set for each repository
+- uses `project-skill-router` to recommend a more focused skill set when you explicitly ask for it
 
 ## Core Capabilities
 
 - One-step install: set up the default recommended skill repos in your local Codex environment
-- Skill recommendation: run a visible routing pass when entering a new repository
+- Skill recommendation: run a visible routing pass via prompt trigger instead of auto-running
 - Skill updates: refresh upstream skills with one prompt or one command
 - GitHub-friendly defaults: shareable config that works from a fresh clone
 
@@ -43,8 +43,8 @@ Before you continue, give me a skill recommendation for this repository.
 Important:
 
 - this is prompt-driven guidance, not a hard hook or middleware
-- it works best when you explicitly mention `project-skill-router`, `skill recommendation`, `skill routing`, `skill推荐`, or `技能推荐`
-- after install, the first thing to expect is a visible `Skill Routing` section
+- it does not auto-run; when you want it, explicitly mention `project-skill-router`, `skill recommendation`, `skill routing`, `skill推荐`, or `技能推荐`
+- after install, when you use the trigger prompt, the first thing to expect is a visible `Skill Routing` section
 - if you want the installed catalog itself refreshed, use `npm run update:skills` or ask for `技能更新`, `skills更新`, `update skills`, or `skill update`
 
 ## When To Use It
@@ -153,7 +153,7 @@ If you do not see something like this, the router probably did not run explicitl
 2. installs managed skills into `~/.codex/skills`
 3. updates `~/.codex/AGENTS.md` with the startup routing instructions
 
-After that, Codex can use the bundled `project-skill-router` behavior to:
+After that, Codex can use the bundled `project-skill-router` behavior when you explicitly trigger it:
 
 - detect the project stack
 - recommend always-on skills

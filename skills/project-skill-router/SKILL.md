@@ -5,9 +5,7 @@ description: Analyze a repository at the start of work, identify its stack and r
 
 # Project Skill Router
 
-Use this skill at the start of work in a repository to avoid overloading the session with too many skills.
-
-In a new session, when a repository is first encountered, the routing result should be shown explicitly before substantive work starts. Keep it brief but visible, then continue with the user's actual request.
+Use this skill only when the user explicitly asks for skill routing or skill recommendation.
 
 When this skill is invoked explicitly, do not just list skill names. Recommend the skills, give a short plain-language description for each one, and then ask the user whether to activate the recommended set.
 
@@ -25,7 +23,7 @@ Common explicit trigger phrases include:
 - Pick a small set of always-on skills
 - Add task-specific skills only when they are clearly relevant
 - Keep expensive or niche skills opt-in by default
-- Avoid rerunning the same routing step unless the session is new, the task changes materially, or the user asks for it
+- Avoid running or rerunning the routing step unless the user explicitly asks for it
 - Make the recommendation actionable by explaining what each recommended skill is for
 - Wait for user confirmation before treating the recommended set as the active skill set
 

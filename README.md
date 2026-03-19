@@ -8,12 +8,12 @@
 
 - 把多个 skill repo 安装到 `~/.codex/skills`
 - 对重复或功能重叠的 skills 做去重
-- 在进入新仓库时，用 `project-skill-router` 推荐一组更聚焦的 skills
+- 在你提示时，用 `project-skill-router` 推荐一组更聚焦的 skills
 
 ## 核心能力
 
 - 一键安装：把默认推荐 skill repo 安装到本地 Codex 环境
-- 技能推荐：进入新仓库时，先做一轮 skill routing
+- 技能推荐：通过提示词触发 skill routing，而不是自动触发
 - 技能更新：上游 repo 更新后，可一句话或一条命令完成刷新
 - GitHub 友好：默认配置适合直接公开分享，fresh clone 就能用
 
@@ -43,8 +43,8 @@ npm run quick-install
 重要说明：
 
 - 这套机制是提示驱动，不是硬 hook，也不是中间件
-- 想让它更稳定，最直接的方法就是显式点名 `project-skill-router`、`技能推荐`、`skill推荐` 或 `skill routing`
-- 安装完成后，你最应该期待看到的是一段可见的 `Skill Routing` 输出
+- 它不会自动触发；想用时，直接显式点名 `project-skill-router`、`技能推荐`、`skill推荐` 或 `skill routing`
+- 安装完成后，当你发出提示词时，你最应该期待看到的是一段可见的 `Skill Routing` 输出
 - 如果你想刷新本地已安装的 skill 目录，可以执行 `npm run update:skills`，或者直接说 `技能更新`、`skills更新`、`update skills`
 
 ## 什么时候用
@@ -153,7 +153,7 @@ Activation:
 2. 把受管理的 skills 安装到 `~/.codex/skills`
 3. 把启动时的 skill routing 说明写入 `~/.codex/AGENTS.md`
 
-安装完成后，Codex 可以借助内置的 `project-skill-router`：
+安装完成后，Codex 可以在你显式触发时借助内置的 `project-skill-router`：
 
 - 判断项目语言和框架
 - 推荐 always-on skills
